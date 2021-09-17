@@ -24,6 +24,8 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed() {
+        delegate.setTextFields(name: nameTF.text!, surname: surnameTF.text!)
+        dismiss(animated: true)
     }
     
     
