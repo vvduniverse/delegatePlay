@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A092746E26F4ACE400E019C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092746D26F4ACE400E019C9 /* AppDelegate.swift */; };
 		A092747026F4ACE400E019C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092746F26F4ACE400E019C9 /* SceneDelegate.swift */; };
-		A092747226F4ACE400E019C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092747126F4ACE400E019C9 /* ViewController.swift */; };
+		A092747226F4ACE400E019C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092747126F4ACE400E019C9 /* MainViewController.swift */; };
 		A092747526F4ACE400E019C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A092747326F4ACE400E019C9 /* Main.storyboard */; };
 		A092747726F4ACE500E019C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A092747626F4ACE500E019C9 /* Assets.xcassets */; };
 		A092747A26F4ACE500E019C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A092747826F4ACE500E019C9 /* LaunchScreen.storyboard */; };
+		A092748226F4B2D100E019C9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092748126F4B2D100E019C9 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A092746A26F4ACE400E019C9 /* delegatePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegatePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A092746D26F4ACE400E019C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A092746F26F4ACE400E019C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A092747126F4ACE400E019C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A092747126F4ACE400E019C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A092747426F4ACE400E019C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A092747626F4ACE500E019C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A092747926F4ACE500E019C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A092747B26F4ACE500E019C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A092748126F4B2D100E019C9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				A092746D26F4ACE400E019C9 /* AppDelegate.swift */,
 				A092746F26F4ACE400E019C9 /* SceneDelegate.swift */,
-				A092747126F4ACE400E019C9 /* ViewController.swift */,
+				A092747126F4ACE400E019C9 /* MainViewController.swift */,
+				A092748126F4B2D100E019C9 /* SettingsViewController.swift */,
 				A092747326F4ACE400E019C9 /* Main.storyboard */,
 				A092747626F4ACE500E019C9 /* Assets.xcassets */,
 				A092747826F4ACE500E019C9 /* LaunchScreen.storyboard */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A092747226F4ACE400E019C9 /* ViewController.swift in Sources */,
+				A092747226F4ACE400E019C9 /* MainViewController.swift in Sources */,
 				A092746E26F4ACE400E019C9 /* AppDelegate.swift in Sources */,
 				A092747026F4ACE400E019C9 /* SceneDelegate.swift in Sources */,
+				A092748226F4B2D100E019C9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Vahtee-Boo.delegatePlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Vahtee-Boo.delegatePlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
