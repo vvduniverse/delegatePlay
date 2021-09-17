@@ -17,14 +17,16 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var surnameTF: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view.
+//    }
     
     @IBAction func doneButtonPressed() {
-        delegate.setTextFields(name: nameTF.text!, surname: surnameTF.text!)
+        guard let name = nameTF.text else { return}
+        guard let surname = surnameTF.text  else { return }
+        delegate.setTextFields(name: name, surname: surname)
         dismiss(animated: true)
     }
     

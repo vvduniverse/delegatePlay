@@ -19,10 +19,10 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var fullnameLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view.
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let settingsVC = segue.destination as! SettingsViewController
