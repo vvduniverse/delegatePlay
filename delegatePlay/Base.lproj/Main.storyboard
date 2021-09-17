@@ -51,10 +51,15 @@
                     <navigationItem key="navigationItem" id="kBg-l1-F4i">
                         <barButtonItem key="rightBarButtonItem" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="D0M-Xj-O2X">
                             <connections>
-                                <segue destination="FVG-M0-dtm" kind="presentation" id="fNi-Uq-AJU"/>
+                                <segue destination="FVG-M0-dtm" kind="presentation" modalPresentationStyle="fullScreen" id="fNi-Uq-AJU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="fullnameLabel" destination="f1s-Ti-ez7" id="FZp-56-tib"/>
+                        <outlet property="nameLabel" destination="6HO-1c-B8G" id="fd3-cZ-fAE"/>
+                        <outlet property="surnameLabel" destination="7uI-bO-nuo" id="Zdg-dV-tG8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,7 +70,7 @@
             <objects>
                 <viewController id="FVG-M0-dtm" customClass="SettingsViewController" customModule="delegatePlay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJx-Gp-d1n">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ufi-oT-iZk">
@@ -86,6 +91,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sk5-7O-Wkf">
                                 <rect key="frame" x="141.5" y="302" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="FVG-M0-dtm" eventType="touchUpInside" id="7bw-ip-5eg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="muK-pC-CUO"/>
@@ -98,6 +106,10 @@
                             <constraint firstItem="muK-pC-CUO" firstAttribute="trailing" secondItem="ufi-oT-iZk" secondAttribute="trailing" constant="75" id="YBB-Y6-LOk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTF" destination="QHC-GR-Tcb" id="3kU-66-0dA"/>
+                        <outlet property="surnameTF" destination="tEo-t8-gkX" id="0Za-we-lJO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="196-ew-g1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
